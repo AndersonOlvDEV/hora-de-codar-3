@@ -1,0 +1,26 @@
+programa
+{
+    funcao inicio()
+    {
+        // Declaração das variáveis.
+        inteiro soma = 0
+        inteiro contador_de_numeros = 0
+        real media
+        
+        // A variável 'numero' é declarada dentro do laço.
+        // O ponto e vírgula dentro do 'para' pode ser o motivo do erro de sintaxe.
+        // A sintaxe tradicional separa os valores com vírgula ou espaço.
+        para numero de 15 ate 100 faca
+            soma = soma + numero
+            contador_de_numeros = contador_de_numeros + 1
+        fimpara
+        
+        // Calcula a média.
+        // Use a coerção de tipo '(real)' para garantir que o resultado tenha casas decimais.
+        media = (real)soma / contador_de_numeros
+
+        escreva("A soma total dos números é: ", soma, "\n")
+        escreva("A quantidade de números é: ", contador_de_numeros, "\n")
+        escreva("A média aritmética é: ", media, "\n")
+    }
+}
