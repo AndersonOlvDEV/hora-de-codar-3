@@ -1,0 +1,30 @@
+programa
+{
+    funcao inicio()
+    {
+        inteiro numero1, numero2
+        inteiro soma = 0
+        inteiro quantidade = 0
+        real media
+        
+        inteiro i
+        
+        escreva("Digite o primeiro número inteiro: ")
+        leia(numero1)
+        
+        escreva("Digite o segundo número inteiro (maior que o primeiro): ")
+        leia(numero2)
+
+        para i de numero1 ate numero2 faca
+            soma = soma + i
+            quantidade = quantidade + 1
+        fimpara
+        
+        media = (real)soma / quantidade
+        
+        escreva("\n--- Resultados ---\n")
+        escreva("A soma de todos os números no intervalo é: ", soma, "\n")
+        escreva("A quantidade de números no intervalo é: ", quantidade, "\n")
+        escreva("A média aritmética é: ", media, "\n")
+    }
+}
