@@ -1,0 +1,29 @@
+programa
+{
+  funcao inicio()
+  {
+    inteiro valor1, valor2
+    real resultado
+
+    // Lê o primeiro valor
+    escreva("Digite o primeiro número: ")
+    leia(valor1)
+
+    // Lê o segundo valor e garante que ele seja positivo
+    escreva("Digite o segundo número (maior que zero): ")
+    leia(valor2)
+
+    enquanto (valor2 <= 0)
+    {
+      escreva("Valor inválido! Por favor, digite um número maior que zero: ")
+      leia(valor2)
+    }
+
+    // Realiza a divisão. A conversão 'real(valor1)' garante que o resultado tenha casas decimais.
+    resultado = real(valor1) / valor2
+
+    // Exibe o resultado da operação
+    escreva("\n")
+    escreva("O resultado da divisão de ", valor1, " por ", valor2, " é: ", resultado, "\n")
+  }
+}
