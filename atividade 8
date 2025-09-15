@@ -1,0 +1,21 @@
+programa
+{
+    funcao inicio()
+    {
+        // Declaração das variáveis.
+        inteiro N, i
+        
+        // 1. Solicita ao usuário o valor de N.
+        escreva("Digite um número inteiro (N): ")
+        leia(N)
+        
+        escreva("\n--- Números de 1 até ", N, " ---\n")
+        
+        // 2. Laço de repetição para imprimir os números.
+        // O laço começa com 'i' igual a 1 e vai até o valor de 'N'.
+        para (i = 1; i <= N; i++)
+        {
+            escreva(i, "\n") // Imprime o valor de 'i' e pula para a próxima linha.
+        }
+    }
+}
