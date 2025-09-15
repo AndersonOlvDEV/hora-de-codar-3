@@ -1,0 +1,36 @@
+programa
+{
+    funcao inicio()
+    {
+        // Declaração das variáveis.
+        real nota, soma = 0.0, media
+        inteiro i
+        
+        // O laço externo 'para' garante que o programa leia 6 notas.
+        para (i = 1; i <= 6; i++)
+        {
+            // O laço interno 'faca-enquanto' garante a validação de cada nota.
+            // Ele irá repetir até que uma nota válida seja informada.
+            faca
+            {
+                escreva("Digite a nota ", i, " (0 a 10): ")
+                leia(nota)
+
+                // Se a nota for inválida, exibe uma mensagem de erro.
+                se (nota < 0 ou nota > 10) {
+                    escreva("ERRO: Valor inválido! A nota deve ser entre 0 e 10.\n")
+                }
+            } enquanto (nota < 0 ou nota > 10)
+            
+            // Depois que a nota for validada, ela é somada ao total.
+            soma = soma + nota
+        }
+        
+        // Calcula a média final.
+        media = soma / 6.0
+        
+        // Imprime o resultado final.
+        escreva("\n--- Resultado ---\n")
+        escreva("A média final do aluno é: ", media, "\n")
+    }
+}
