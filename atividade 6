@@ -1,0 +1,39 @@
+programa
+{
+    funcao inicio()
+    {
+        real nota1, nota2, media
+        caracter resposta
+        inteiro aprovados = 0
+
+        faca
+        {
+            escreva("--- Calcular Média do Aluno ---\n")
+            escreva("Digite a primeira nota: ")
+            leia(nota1)
+            
+            escreva("Digite a segunda nota: ")
+            leia(nota2)
+
+            media = (nota1 + nota2) / 2
+
+            se (media >= 9.5) {
+                escreva("\nNota final: ", media)
+                escreva("\nStatus: Aluno APROVADO!\n")
+                aprovados = aprovados + 1 // Incrementa o contador de aprovados
+            }
+            senao {
+                escreva("\nNota final: ", media)
+                escreva("\nStatus: Aluno REPROVADO.\n")
+            }
+
+            escreva("\nCalcular a média de outro aluno? (S/N): ")
+            leia(resposta)
+            escreval() // Adiciona uma linha em branco para melhor visualização
+
+        } enquanto (resposta == 'S' ou resposta == 's') // O laço continua se a resposta for 'S' ou 's'
+
+        escreva("--- Resumo Final ---\n")
+        escreva("Total de alunos aprovados: ", aprovados, "\n")
+    }
+}
