@@ -1,0 +1,25 @@
+programa
+{
+    funcao inicio()
+    {
+        inteiro N
+        inteiro i
+        inteiro j
+        inteiro resultado
+
+        escreva("Digite um número inteiro (N) para imprimir as tabuadas até ele: ")
+        leia(N)
+
+        para (i = 1; i <= N; i++)
+        {
+            // Imprime o cabeçalho de cada tabuada.
+            escreva("\n--- Tabuada do ", i, " ---\n")
+
+            para (j = 1; j <= 10; j++)
+            {
+                resultado = i * j
+                escreva(i, " x ", j, " = ", resultado, "\n")
+            }
+        }
+    }
+}
