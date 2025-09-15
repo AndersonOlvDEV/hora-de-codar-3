@@ -1,0 +1,31 @@
+programa
+{
+    funcao inicio()
+    {
+        inteiro valor
+        inteiro dentro_intervalo = 0
+        inteiro fora_intervalo = 0
+        inteiro i
+
+        escreva("Por favor, digite 10 valores inteiros.\n")
+        
+        para (i = 1; i <= 10; i++)
+        {
+            escreva("Digite o ", i, "º valor: ")
+            leia(valor)
+            
+            se (valor >= 24 e valor <= 42)
+            {
+                dentro_intervalo = dentro_intervalo + 1
+            }
+            senao
+            {
+                fora_intervalo = fora_intervalo + 1
+            }
+        }
+
+        escreva("\n--- Resultado ---\n")
+        escreva("Valores no intervalo [24, 42]: ", dentro_intervalo, "\n")
+        escreva("Valores fora do intervalo: ", fora_intervalo, "\n")
+    }
+}
